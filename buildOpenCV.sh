@@ -43,7 +43,7 @@ function get_deps
 function build_helper
 {
 	case "$1" in 
-		py2)
+		legacy)
 			cmake \
 		    -DCMAKE_BUILD_TYPE=Release \
 		    -DCMAKE_INSTALL_PREFIX=/usr \
@@ -78,7 +78,7 @@ function build_helper
 		    ../
 		    exit
 		    ;;
-		py3)
+		new)
 			cmake \
 		    -DCMAKE_BUILD_TYPE=Release \
 		    -DCMAKE_INSTALL_PREFIX=/usr \
